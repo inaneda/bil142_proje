@@ -1,9 +1,8 @@
 #include <chrono>
-#include <cstdlib>
 #include <iostream>
 #include <random>
 #include <thread>
-#define numberOfEvents 5
+#define numberOfEvents 10
 #define standardAsteroidDamage 10
 #define standardSpacePirateDamage 30
 #define standardGoldFind 10
@@ -32,7 +31,7 @@ void eventHandler(Ship &currentShip) {
               << ":\n";  // for readability
     --numberOfEventsLeft;
     ++currentEventNumber;
-    switch (whichEvent) {
+    switch (whichEvent) {       //whichEvent kesinlikle 1, 2 ya da 3 tam sayısına eşit, default statement'a gerek yok.
         case 1: {
             event.spacePirates(currentShip);
             break;
