@@ -2,7 +2,7 @@
 #include <iostream>
 #include <random>
 #include <thread>
-#define numberOfEvents 10
+#define numberOfEvents 5
 #define standardAsteroidDamage 10
 #define standardSpacePirateDamage 30
 #define standardGoldFind 10
